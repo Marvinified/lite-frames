@@ -10,27 +10,37 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface DeviceFrame {}
+  interface LiteIphoneFrames {}
+  interface LiteNexusFrames {}
 }
 
 declare global {
 
 
-  interface HTMLDeviceFrameElement extends Components.DeviceFrame, HTMLStencilElement {}
-  var HTMLDeviceFrameElement: {
-    prototype: HTMLDeviceFrameElement;
-    new (): HTMLDeviceFrameElement;
+  interface HTMLLiteIphoneFramesElement extends Components.LiteIphoneFrames, HTMLStencilElement {}
+  var HTMLLiteIphoneFramesElement: {
+    prototype: HTMLLiteIphoneFramesElement;
+    new (): HTMLLiteIphoneFramesElement;
+  };
+
+  interface HTMLLiteNexusFramesElement extends Components.LiteNexusFrames, HTMLStencilElement {}
+  var HTMLLiteNexusFramesElement: {
+    prototype: HTMLLiteNexusFramesElement;
+    new (): HTMLLiteNexusFramesElement;
   };
   interface HTMLElementTagNameMap {
-    'device-frame': HTMLDeviceFrameElement;
+    'lite-iphone-frames': HTMLLiteIphoneFramesElement;
+    'lite-nexus-frames': HTMLLiteNexusFramesElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface DeviceFrame {}
+  interface LiteIphoneFrames {}
+  interface LiteNexusFrames {}
 
   interface IntrinsicElements {
-    'device-frame': DeviceFrame;
+    'lite-iphone-frames': LiteIphoneFrames;
+    'lite-nexus-frames': LiteNexusFrames;
   }
 }
 
@@ -40,7 +50,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'device-frame': LocalJSX.DeviceFrame & JSXBase.HTMLAttributes<HTMLDeviceFrameElement>;
+      'lite-iphone-frames': LocalJSX.LiteIphoneFrames & JSXBase.HTMLAttributes<HTMLLiteIphoneFramesElement>;
+      'lite-nexus-frames': LocalJSX.LiteNexusFrames & JSXBase.HTMLAttributes<HTMLLiteNexusFramesElement>;
     }
   }
 }

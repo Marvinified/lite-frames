@@ -1,16 +1,15 @@
 import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'device-frame',
-  styleUrl: 'frame.css',
+  tag: 'lite-iphone-frames',
+  styleUrl: 'iphone-frames.css',
   shadow: true
 })
-export class Frame {
+export class IphoneFrames {
 
   render() {
     return (
       <Host>
-        <h1>Frame</h1>
         <slot></slot>
       </Host>
     );
