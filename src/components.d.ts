@@ -10,7 +10,10 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface LiteIphoneFrames {}
+  interface LiteIphoneFrames {
+    'model': string;
+    'theme': string;
+  }
   interface LiteNexusFrames {}
 }
 
@@ -35,7 +38,10 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface LiteIphoneFrames {}
+  interface LiteIphoneFrames {
+    'model'?: string;
+    'theme'?: string;
+  }
   interface LiteNexusFrames {}
 
   interface IntrinsicElements {

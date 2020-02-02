@@ -1,3 +1,109 @@
 :host {
+  --aspect-ratio: 202%;
+  --body-color-dark: rgb(0, 0, 0);
+  --body-color-light: rgb(236, 236, 236);
   display: block;
+}
+
+.container {
+  position: relative;
+  padding-top: var(--aspect-ratio);
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.frame-dark {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color-dark);
+  border-radius: 10% / 5%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.frame-light {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color-light);
+  border-radius: 10% / 5%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10% / 5%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.top-dark {
+  background-color: var(--body-color-dark);
+  position: absolute;
+  border-radius: 10% / 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 40%;
+  margin: 0 30%;
+  box-sizing: border-box;
+  height: 3%;
+  display: flex;
+  justify-content: center;
+  padding: 0% 5%;
+}
+
+.top-light {
+  background-color: var(--body-color-light);
+  position: absolute;
+  border-radius: 10% / 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 40%;
+  margin: 0 30%;
+  box-sizing: border-box;
+  height: 3%;
+  display: flex;
+  justify-content: center;
+  padding: 0% 5%;
+}
+
+.camera {
+  width: 10%;
+  height: 50%;
+  background-color: #0c3d79;
+  border-radius: 50%;
+}
+.sensor {
+  width: 10%;
+  height: 50%;
+  background-color: #25282b;
+  border-radius: 50%;
+}
+
+.earpiece {
+  width: 50%;
+  height: 50%;
+  background-color: #282c31;
+  border-radius: 10% / 50%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.screen-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
 }
