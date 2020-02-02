@@ -10,53 +10,27 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
-  }
+  interface DeviceFrame {}
 }
 
 declare global {
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLDeviceFrameElement extends Components.DeviceFrame, HTMLStencilElement {}
+  var HTMLDeviceFrameElement: {
+    prototype: HTMLDeviceFrameElement;
+    new (): HTMLDeviceFrameElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'device-frame': HTMLDeviceFrameElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
-  }
+  interface DeviceFrame {}
 
   interface IntrinsicElements {
-    'my-component': MyComponent;
+    'device-frame': DeviceFrame;
   }
 }
 
@@ -66,7 +40,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'my-component': LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+      'device-frame': LocalJSX.DeviceFrame & JSXBase.HTMLAttributes<HTMLDeviceFrameElement>;
     }
   }
 }
