@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'lite-mac-book',
@@ -7,19 +7,23 @@ import { Component, Host, h } from '@stencil/core';
 })
 export class MacBook {
 
+  @Prop({ reflect: true }) theme: string = 'dark';
+
   render() {
     return (
       <Host>
         <div class="container">
-          <div class="screen">
+          <div class={`screen-${this.theme}`}>
             <div class="screen-area">
+              <div class="content">
+                <slot></slot>
+              </div>
             </div>
           </div>
-          <div class="panel">
-            <div class="emb">
+          <div class={`panel-${this.theme}`}>
+            <div class={`emb-${this.theme}`}>
             </div>
           </div>
-          {/* <slot></slot> */}
         </div>
       </Host>
     );

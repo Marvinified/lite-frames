@@ -13,7 +13,9 @@ export namespace Components {
   interface LiteIphoneX {
     'theme': string;
   }
-  interface LiteMacBook {}
+  interface LiteMacBook {
+    'theme': string;
+  }
   interface LitePixel4 {
     'theme': string;
   }
@@ -50,7 +52,9 @@ declare namespace LocalJSX {
   interface LiteIphoneX {
     'theme'?: string;
   }
-  interface LiteMacBook {}
+  interface LiteMacBook {
+    'theme'?: string;
+  }
   interface LitePixel4 {
     'theme'?: string;
   }
