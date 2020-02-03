@@ -7,10 +7,7 @@ import { Component, Host, Prop, h } from '@stencil/core';
 })
 export class IphoneFrames {
 
-  @Prop({ reflect: true }) model: string = 'x';
   @Prop({ reflect: true }) theme: string = 'dark';
-
-
 
   render() {
 
