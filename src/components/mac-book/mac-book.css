@@ -1,0 +1,64 @@
+:host {
+  --aspect-ratio: 60%;
+  --body-color-dark: rgb(0, 0, 0);
+  --body-color-light: rgb(236, 236, 236);
+  display: block;
+}
+
+/* 
+.container {
+  position: relative;
+  margin: auto;
+  padding-top: 50%;
+} */
+
+.screen {
+  position: relative;
+  margin: 0 5%;
+  width: 90%;
+  padding-top: var(--aspect-ratio);
+  background-color: dimgrey;
+  border-radius: 3% / 6%;
+  /* border-top-left-radius: 2% ; */
+  /* border-top-right-radius: 2% ; */
+  border-bottom-left-radius: 6% ;
+  border-bottom-right-radius: 6% ;
+}
+
+.screen-area {
+  position: absolute;
+  top: 0%;
+  margin: 2.5%;
+  width: 95%;
+  padding-top: var(--aspect-ratio);
+  background-color: white;
+  border-radius: 2% / 4%;
+}
+
+.panel {
+  margin-top: -2%;
+  position: relative;
+  width: 100%;
+  padding-top: 2%;
+  background-color: gray;
+  border-radius: 2% / 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.emb {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  padding-top: 1%;
+  background-color: rgb(153, 152, 152);
+  border-radius: 10% / 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

@@ -1,0 +1,134 @@
+:host {
+  --aspect-ratio: 213.81%;
+  --body-color-dark: rgb(0, 0, 0);
+  --body-color-light: rgb(236, 236, 236);
+  display: block;
+}
+
+.container {
+  position: relative;
+  padding-top: var(--aspect-ratio);
+  width: 100%;
+}
+
+.power {
+  border-radius: 50% / 10%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  height: 5%;
+  width: 1%;
+  top: 20%;
+  right: 0%;
+  background-color: #F48172;
+}
+
+.vol {
+  border-radius: 50% / 10%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  height: 15%;
+  width: 1%;
+  top: 30%;
+  right: 0%;
+  background-color: var(--body-color-dark);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  width: 98%;
+  height: 100%;
+}
+
+.frame-dark {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color-dark);
+  border-radius: 10% / 5%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.frame-light {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color-light);
+  border-radius: 10% / 5%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.screen {
+  position: absolute;
+  bottom: 4%;
+  width: 92%;
+  height: 90%;
+  border-radius: 10% / 5%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.top-dark {
+  background-color: var(--body-color-dark);
+  border-radius: 10% / 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  /* width: 40%; */
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 5%;
+}
+
+.top-light {
+  background-color: var(--body-color-light);
+  border-radius: 10% / 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  /* width: 40%; */
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 5%;
+}
+
+.camera {
+  width: 2%;
+  height: 30%;
+  background-color: #0d1e30;
+  border-radius: 50%;
+}
+
+.sensor {
+  width: 2%;
+  height: 30%;
+  background-color: transparent;
+}
+
+.earpiece {
+  width: 10%;
+  height: 20%;
+  background-color: #282c31;
+  border-radius: 10% / 50%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.screen-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}

@@ -11,10 +11,12 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface LiteIphoneX {
-    'model': string;
     'theme': string;
   }
-  interface LiteNexusFrames {}
+  interface LiteMacBook {}
+  interface LitePixel4 {
+    'theme': string;
+  }
 }
 
 declare global {
@@ -26,27 +28,37 @@ declare global {
     new (): HTMLLiteIphoneXElement;
   };
 
-  interface HTMLLiteNexusFramesElement extends Components.LiteNexusFrames, HTMLStencilElement {}
-  var HTMLLiteNexusFramesElement: {
-    prototype: HTMLLiteNexusFramesElement;
-    new (): HTMLLiteNexusFramesElement;
+  interface HTMLLiteMacBookElement extends Components.LiteMacBook, HTMLStencilElement {}
+  var HTMLLiteMacBookElement: {
+    prototype: HTMLLiteMacBookElement;
+    new (): HTMLLiteMacBookElement;
+  };
+
+  interface HTMLLitePixel4Element extends Components.LitePixel4, HTMLStencilElement {}
+  var HTMLLitePixel4Element: {
+    prototype: HTMLLitePixel4Element;
+    new (): HTMLLitePixel4Element;
   };
   interface HTMLElementTagNameMap {
     'lite-iphone-x': HTMLLiteIphoneXElement;
-    'lite-nexus-frames': HTMLLiteNexusFramesElement;
+    'lite-mac-book': HTMLLiteMacBookElement;
+    'lite-pixel-4': HTMLLitePixel4Element;
   }
 }
 
 declare namespace LocalJSX {
   interface LiteIphoneX {
-    'model'?: string;
     'theme'?: string;
   }
-  interface LiteNexusFrames {}
+  interface LiteMacBook {}
+  interface LitePixel4 {
+    'theme'?: string;
+  }
 
   interface IntrinsicElements {
     'lite-iphone-x': LiteIphoneX;
-    'lite-nexus-frames': LiteNexusFrames;
+    'lite-mac-book': LiteMacBook;
+    'lite-pixel-4': LitePixel4;
   }
 }
 
@@ -57,7 +69,8 @@ declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
       'lite-iphone-x': LocalJSX.LiteIphoneX & JSXBase.HTMLAttributes<HTMLLiteIphoneXElement>;
-      'lite-nexus-frames': LocalJSX.LiteNexusFrames & JSXBase.HTMLAttributes<HTMLLiteNexusFramesElement>;
+      'lite-mac-book': LocalJSX.LiteMacBook & JSXBase.HTMLAttributes<HTMLLiteMacBookElement>;
+      'lite-pixel-4': LocalJSX.LitePixel4 & JSXBase.HTMLAttributes<HTMLLitePixel4Element>;
     }
   }
 }
