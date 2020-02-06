@@ -18,23 +18,32 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 
 ## How to use
 
-- Import lite-frames into your project
+### Import lite-frames into your project
 
-  - with a script tag
+1.  Using `script` tag:
 
-  ```html
-  <script src="https://cdn.jsdelivr.net/npm/lite-frames@1.0.0/dist/lite-frames.js"></script>
-  ```
+    ```html
+    <script src="https://unpkg.com/lite-frames@1.0.3/dist/lite-frames.js"></script>
+    ```
 
-  - using npm
+2. using npm
 
-  ```sh
-  npm i lite-frames
-  ```
+    - install lite-frame
 
-  ```js
-  import * from 'lite-frames'
-  ```
+      ```sh
+      npm i lite-frames
+      ```
+
+    - import the package
+
+      ```js
+      import 'lite-frames'
+      ```
+
+      See Stencils Docs on how to use with other frameworks or libraries when using npm
+
+      👉🏻 [Integration docs](https://stenciljs.com/docs/overview)
+
 
 - Every Lite Frame is a individual element, e.g For `Iphone X` we have
 
