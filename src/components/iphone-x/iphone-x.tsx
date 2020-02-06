@@ -1,4 +1,4 @@
-import { Component, Host, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'lite-iphone-x',

@@ -1,7 +1,7 @@
 {
-  "name": "device-frames",
-  "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "name": "lite-frames",
+  "version": "0.0.5",
+  "description": "This is a library of light weight frames UI (device, screens) made into web-components. you are allowed to embed whatever inside the frames",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -10,6 +10,18 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/device-frames/device-frames.js",
+  "homepage": "https://github.com/marvinified/lite-frames#README.md",
+  "url": "https://github.com/marvinified/lite-frames",
+  "email": "marvinified@gmail.com",
+  "keywords": [
+    "frames",
+    "device frames",
+    "lite frames",
+    "lite-frames",
+    "web components",
+    "components",
+    "stencil"
+  ],
   "files": [
     "dist/",
     "loader/"
