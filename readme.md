@@ -70,7 +70,7 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
   - Dark Mode (default)
 
   ```html
-  <lite-iphone-x theme="light"></lite-iphone-x>
+  <lite-iphone-x theme="dark"></lite-iphone-x>
   ```
 
 - Contents to be embedded inside the frame can be added as a decendent of the frame.
