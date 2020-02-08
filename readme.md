@@ -27,7 +27,7 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 1.  Using `script` tag:
 
     ```html
-    <script src="https://unpkg.com/lite-frames@1.0.3/dist/lite-frames.js"></script>
+    <script src="https://unpkg.com/lite-frames@1.0.10/dist/lite-frames.js"></script>
     ```
 
 2. using npm
