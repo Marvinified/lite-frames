@@ -29,6 +29,15 @@
     transform: rotate(0deg);
   }
 
+  div.screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .mac {
     width: 30%;
   }
@@ -38,7 +47,9 @@
 
   <div class="frame">
     <lite-iphone-x theme="dark">
-      <!-- <img width="100%" height="100%" src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=beautiful-beauty-blue-bright-414612.jpg&fm=jpg" alt="TEsting" srcset=""> -->
+      <div class="screen">
+        this is my interface
+      </div>
     </lite-iphone-x>
     <div class="label">
       Apple IPhone X
@@ -47,6 +58,9 @@
 
   <div class="frame">
     <lite-pixel-4 theme="dark">
+      <div class="screen">
+        this is my interface
+      </div>
     </lite-pixel-4>
     <div class="label">
       Google Pixel 4
@@ -55,6 +69,9 @@
 
   <div class="frame mac">
     <lite-mac-book theme="dark">
+      <div class="screen">
+        this is my interface
+      </div>
     </lite-mac-book>
     <div class="label">
       MacBook Pro
