@@ -16,6 +16,10 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 
 ![Images of Frames](https://github.com/Marvinified/lite-frames/blob/master/available.png?raw=true)
 
+## Demo 
+
+View Live Demo and Playground [Here](https://codesandbox.io/embed/objective-goldwasser-pnn8g?fontsize=14&hidenavigation=1&theme=dark) 
+
 ## How to use
 
 ### Import lite-frames into your project
