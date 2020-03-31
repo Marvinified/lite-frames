@@ -1,6 +1,6 @@
 {
   "name": "lite-frames",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This is a library of light weight frames UI (device, screens) made into web-components. you are allowed to embed whatever inside the frames",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
