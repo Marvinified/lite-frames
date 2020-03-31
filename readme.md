@@ -18,7 +18,7 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 
 ## Demo 
 
-[View Live Demo and Playground](https://codesandbox.io/embed/objective-goldwasser-pnn8g?fontsize=14&hidenavigation=1&theme=dark) 
+[View Live Demo and Playground](https://codesandbox.io/s/ancient-monad-vbhhk) 
 
 ## How to use
 
