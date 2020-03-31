@@ -18,7 +18,7 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 
 ## Demo 
 
-[View Live Demo and Playground](https://codesandbox.io/embed/objective-goldwasser-pnn8g?fontsize=14&hidenavigation=1&theme=dark) 
+[View Live Demo and Playground](https://codesandbox.io/s/ancient-monad-vbhhk) 
 
 ## How to use
 
@@ -27,7 +27,8 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 1.  Using `script` tag:
 
     ```html
-    <script src="https://unpkg.com/lite-frames@1.0.10/dist/lite-frames.js"></script>
+    <script src="https://unpkg.com/lite-frames@1.1.0/dist/lite-frames.js">
+    </script>
     ```
 
 2. using npm
@@ -44,9 +45,9 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
       import 'lite-frames'
       ```
 
-      See Stencils Docs on how to use with other frameworks or libraries when using npm
+      See Stencils Docs on how to use with any frameworks or libraries when using npm
 
-      👉🏻 [Integration docs](https://stenciljs.com/docs/overview)
+      👉🏻 [Stencil Integration docs](https://stenciljs.com/docs/overview)
 
 
 - Every Lite Frame is a individual element, e.g For `Iphone X` we have
@@ -55,7 +56,7 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
   <lite-iphone-x></lite-iphone-x>
   ```
 
-- A Lite Frame `inherits` the `width` of it `parent` and must be parent element with a width greater than 0px
+- A Lite Frame `inherits` the `width` of it `parent` and must have a parent element with a width greater than 0px
 
   ```html
   <div style="width:200px;">
@@ -77,7 +78,7 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
   <lite-iphone-x theme="dark"></lite-iphone-x>
   ```
 
-- Contents to be embedded inside the frame can be added as a decendent of the frame.
+- Contents to be embedded inside the frame can be added as a decendant of the frame.
   ```html
   <lite-iphone-x theme="dark">
       <!-- Html Content or text content -->
@@ -89,9 +90,10 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 
 | Frame Name     | Tag                              |
 | -------------- | -------------------------------- |
-| Iphone X       | `<lite-iphone-x></lite-iphone-x` |
-| Google pixel 4 | `<lite-pixel-4></lite-pixel-4`   |
-| Macbook        | `<lite-mac-book></lite-mac-book` |
+| Iphone X       | `<lite-iphone-x></lite-iphone-x>` |
+| Google pixel 4 | `<lite-pixel-4></lite-pixel-4>`   |
+| Macbook        | `<lite-mac-book></lite-mac-book>` |
+| IPad Pro        | `<lite-ipad></lite-ipad>` |
 
 ## Attributes
 
