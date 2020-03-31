@@ -1,0 +1,147 @@
+:host {
+  --aspect-ratio: 133.33%;
+  --body-color-dark: rgb(0, 0, 0);
+  --body-color-light: rgb(236, 236, 236);
+  display: block;
+}
+
+.container {
+  position: relative;
+  padding-top: var(--aspect-ratio);
+  width: 100%;
+}
+
+.power-light {
+  border-radius: 10% / 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  height: .35%;
+  width: 8%;
+  top: -0.35%;
+  right: 10%;
+  background-color: #CFCFCF;
+}
+.power-dark {
+  border-radius: 10% / 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  height: .35%;
+  width: 8%;
+  top: -0.35%;
+  right: 10%;
+  background-color: grey;
+}
+
+.vol-up-dark {
+  border-radius: 50% / 10%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  height: 5%;
+  width: .5%;
+  top: 10%;
+  right: .5%;
+  background-color: grey;
+}
+
+.vol-up-light {
+  border-radius: 50% / 10%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  height: 5%;
+  width: .5%;
+  top: 10%;
+  right: .5%;
+  background-color: #CFCFCF;
+}
+
+.vol-down-dark {
+  border-radius: 50% / 10%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  height: 5%;
+  width: .5%;
+  top: 17%;
+  right: .5%;
+  background-color: grey;
+}
+
+.vol-down-light {
+  border-radius: 50% / 10%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  height: 5%;
+  width: .5%;
+  top: 17%;
+  right: .5%;
+  background-color: #CFCFCF;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  width: 98%;
+  height: 100%;
+}
+
+.frame-dark {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color-dark);
+  border-radius: 8% / 6%;
+  padding: 4%;
+  box-sizing: border-box;
+  border: 2px solid #505050;
+}
+
+.frame-light {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color-dark);
+  border-radius: 8% / 6%;
+  padding: 4%;
+  box-sizing: border-box;
+  border: 2px solid #CFCFCF;
+}
+
+.screen {
+  position: absolute;
+  bottom: 4%;
+  width: 92%;
+  height: 92%;
+  border-radius: 4% / 3%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.screen-area {
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera {
+  width: 1.5%;
+  height: 30%;
+  background-color: #0d4156;
+  border-radius: 50%;
+}

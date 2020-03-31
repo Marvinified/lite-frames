@@ -10,6 +10,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface LiteIpad {
+    'theme': string;
+  }
   interface LiteIphoneX {
     'theme': string;
   }
@@ -23,6 +26,12 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLLiteIpadElement extends Components.LiteIpad, HTMLStencilElement {}
+  var HTMLLiteIpadElement: {
+    prototype: HTMLLiteIpadElement;
+    new (): HTMLLiteIpadElement;
+  };
 
   interface HTMLLiteIphoneXElement extends Components.LiteIphoneX, HTMLStencilElement {}
   var HTMLLiteIphoneXElement: {
@@ -42,6 +51,7 @@ declare global {
     new (): HTMLLitePixel4Element;
   };
   interface HTMLElementTagNameMap {
+    'lite-ipad': HTMLLiteIpadElement;
     'lite-iphone-x': HTMLLiteIphoneXElement;
     'lite-mac-book': HTMLLiteMacBookElement;
     'lite-pixel-4': HTMLLitePixel4Element;
@@ -49,6 +59,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface LiteIpad {
+    'theme'?: string;
+  }
   interface LiteIphoneX {
     'theme'?: string;
   }
@@ -60,6 +73,7 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'lite-ipad': LiteIpad;
     'lite-iphone-x': LiteIphoneX;
     'lite-mac-book': LiteMacBook;
     'lite-pixel-4': LitePixel4;
@@ -72,6 +86,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'lite-ipad': LocalJSX.LiteIpad & JSXBase.HTMLAttributes<HTMLLiteIpadElement>;
       'lite-iphone-x': LocalJSX.LiteIphoneX & JSXBase.HTMLAttributes<HTMLLiteIphoneXElement>;
       'lite-mac-book': LocalJSX.LiteMacBook & JSXBase.HTMLAttributes<HTMLLiteMacBookElement>;
       'lite-pixel-4': LocalJSX.LitePixel4 & JSXBase.HTMLAttributes<HTMLLitePixel4Element>;

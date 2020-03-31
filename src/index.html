@@ -36,6 +36,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #813262;
+    color: whitesmoke;
   }
 
   .mac {
@@ -48,7 +50,14 @@
   <div class="frame">
     <lite-iphone-x theme="dark">
       <div class="screen">
-        this is my interface
+        <pre>
+          <xmp>
+<lite-iphone-x>
+  ...
+</lite-iphone-x>
+          </xmp>
+
+        </pre>
       </div>
     </lite-iphone-x>
     <div class="label">
@@ -59,7 +68,14 @@
   <div class="frame">
     <lite-pixel-4 theme="dark">
       <div class="screen">
-        this is my interface
+        <pre>
+        <xmp>
+<lite-pixel-4>
+  ...
+</lite-pixel-4>
+        </xmp>
+        <pre>
+
       </div>
     </lite-pixel-4>
     <div class="label">
@@ -68,13 +84,28 @@
   </div>
 
   <div class="frame mac">
-    <lite-mac-book theme="dark">
+    <lite-mac-book>
       <div class="screen">
-        this is my interface
+        <xmp>
+          <lite-mac-book></lite-mac-book>
+        </xmp>
       </div>
     </lite-mac-book>
     <div class="label">
       MacBook Pro
+    </div>
+  </div>
+
+  <div class="frame mac">
+    <lite-ipad theme="light">
+      <div class="screen">
+        <xmp>
+          <lite-ipad></lite-ipad>
+        </xmp>
+      </div>
+    </lite-ipad>
+    <div class="label">
+      IPad Pro
     </div>
   </div>
 
