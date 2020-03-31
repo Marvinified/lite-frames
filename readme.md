@@ -27,7 +27,7 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 1.  Using `script` tag:
 
     ```html
-    <script src="https://unpkg.com/lite-frames@1.0.10/dist/lite-frames.js"></script>
+    <script src="https://unpkg.com/lite-frames@1.1.0/dist/lite-frames.js"></script>
     ```
 
 2. using npm
@@ -89,9 +89,10 @@ Lite Frames have plans to add more frames (and screens) e.g terminal frame, chro
 
 | Frame Name     | Tag                              |
 | -------------- | -------------------------------- |
-| Iphone X       | `<lite-iphone-x></lite-iphone-x` |
-| Google pixel 4 | `<lite-pixel-4></lite-pixel-4`   |
-| Macbook        | `<lite-mac-book></lite-mac-book` |
+| Iphone X       | `<lite-iphone-x></lite-iphone-x>` |
+| Google pixel 4 | `<lite-pixel-4></lite-pixel-4>`   |
+| Macbook        | `<lite-mac-book></lite-mac-book>` |
+| IPad Pro        | `<lite-ipad></lite-ipad>` |
 
 ## Attributes
 
